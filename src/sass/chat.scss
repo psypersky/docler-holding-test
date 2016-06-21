@@ -1,0 +1,48 @@
+.chat {
+  height: 100%;
+  position: relative;
+
+  .messages-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 10%;
+    overflow-y: scroll;
+
+    .message {
+      display: block;
+      margin-bottom: 19px;
+      padding-left: 9%;
+      padding-right: 9%;
+
+      &.own-message {
+        text-align: right;
+      }
+
+      .msg-bubble {
+        display: inline-block;
+        padding: 6px 7px 8px 9px;
+        border-radius: 7.5px;
+        max-width: 65%;
+
+        .username {
+          font-weight: 800;
+          padding-right: 5px;
+        }
+      }
+    }
+  }
+
+  .controls {
+    position: absolute;
+    top: 90%;
+    left: 3px;
+    right: 0;
+    bottom: 0;
+
+    .text {
+      width: calc(100% - 100px) !important;
+    }
+  }
+}

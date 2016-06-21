@@ -1,0 +1,17 @@
+@import 'base';
+@import 'chat';
+@import 'photos';
+@import 'settings';
+
+html, body, #main-container, #main-container > div, .view-selector {
+  height: 100%;
+}
+
+.view-container {
+  height: calc(100% - 64px);
+}
+
+.tabs {
+  width: 70%;
+  line-height: 64px;
+}
