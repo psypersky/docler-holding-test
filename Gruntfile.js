@@ -21,7 +21,6 @@ module.exports = function(grunt) {
   grunt.registerTask('watch-index', ['watch']);
 
   grunt.registerTask('create-index', function () {
-
     var done = this.async();
 
     // Render to a callback function:
@@ -36,7 +35,7 @@ module.exports = function(grunt) {
         }
 
         done();
-      })
+      });
     });
 
     grunt.log.writeln('Creating index');

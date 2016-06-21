@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "npm run 'webpack-dev-server' & npm run 'compass-watch' & grunt 'watch-index'",
+    "dev": "npm run 'webpack-dev-server' & npm run compass-watch & grunt watch-index",
     "webpack-dev-server": "webpack-dev-server --inline --host 0.0.0.0 --hot --content-base bin/ --config webpack.config.dev.js",
     "compass-watch": "compass watch",
-    "build": "npm run webpack-build & npm run 'compass-build'",
+    "build": "npm run webpack-build & npm run compass-build & grunt create-index",
     "webpack-build": "webpack --config webpack.config.prod.js",
     "compass-build": "compass compile -e production"
   },
